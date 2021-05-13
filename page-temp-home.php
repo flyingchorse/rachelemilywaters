@@ -16,7 +16,7 @@ $args = array(
 	'post__in'  => $sticky,
 	'ignore_sticky_posts' => 1
 );
-query_posts( $args );
+//query_posts( $args );
 if ( $sticky[0] ) {
 	$featurecount = 1;
 	while (have_posts()) : the_post();
@@ -43,8 +43,8 @@ if ( $sticky[0] ) {
 	<?php		 
 	$options = rachelemilywaters_get_theme_options();
 
-$args = array('cat' => $options['sample_select_options'], 'posts_per_page' => 4, 'ignore_sticky_posts' => 1 );
-    query_posts($args);
+//$args = array('cat' => $options['sample_select_options'], 'posts_per_page' => 4, 'ignore_sticky_posts' => 1 );
+  //  query_posts($args);
 if (have_posts()) : 
 ?>
 <div class="recent-post-section">
