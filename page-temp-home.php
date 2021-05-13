@@ -10,7 +10,7 @@
 
 get_header(); ?>
 		<div class="feature-section">
-		<?php>$sticky = 'Fundraising';
+		<?php $sticky = 'Fundraising';
 $args = array(
 	'posts_per_page' => 3,
 	'post__in'  => $sticky,
