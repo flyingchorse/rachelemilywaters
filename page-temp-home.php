@@ -10,7 +10,7 @@
 
 get_header(); ?>
 		<div class="feature-section">
-		<?php>$sticky = get_option( 'sticky_posts' );
+		<?php>$sticky = 'Fundraising');
 $args = array(
 	'posts_per_page' => 3,
 	'post__in'  => $sticky,
@@ -41,9 +41,9 @@ if ( $sticky[0] ) {
 			<div id="content" class="site-content" role="main">
 
 	<?php		 
-	$options = rachelemilywaters_get_theme_options();
+	//$options = rachelemilywaters_get_theme_options();
 
-$args = array('cat' => $options['sample_select_options'], 'posts_per_page' => 4, 'ignore_sticky_posts' => 1 );
+$args = array('cat' => 'Fundraising', 'posts_per_page' => 4, 'ignore_sticky_posts' => 1 );
     query_posts($args);
 if (have_posts()) : 
 ?>
