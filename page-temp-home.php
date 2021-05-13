@@ -17,8 +17,7 @@ $args = array(
 	'ignore_sticky_posts' => 1
 );
 //query_posts( $args );
-if ( $sticky[0] ) {
-	$featurecount = 1;
+
 	while (have_posts()) : the_post();
 	// insert here your stuff...
 	?>
@@ -33,7 +32,7 @@ if ( $sticky[0] ) {
 			<?php
 			$featurecount++;
 		endwhile;		
-};?>			
+?>			
 		<div class="clear-both"></div>	
 			
 		</div>
